@@ -1,0 +1,163 @@
+#bar {
+    background-color: aqua;
+}
+
+button {
+    color: aqua;
+}
+
+iframe {
+    min-width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+@media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+  html {
+    position: relative;
+    min-height: 100%;
+    font-size: 14px;
+  }
+  
+  body {
+      margin-bottom: 60px;
+  }
+  
+  .header {
+      text-align: center;
+      font-size: 60px;
+      margin-bottom: 40px;
+      text-decoration: underline;
+  }
+  
+  .projects-titles {
+      text-decoration: underline;
+  }
+  
+  .project {
+      margin-left: -200px;
+      max-height: 960px;
+      width: 1700px;
+      display: flex;
+      background-color: aquamarine;
+  }
+  
+  .project-body {
+      float: left;
+      width: 50%;
+      height: 100%;
+      margin: 50px;
+      flex: 1;
+  
+  }
+  
+  .project-pics {
+      width:500px;
+      height:fit-content;
+      float: right;
+      margin-right: 30px;
+      margin-top: 50px;
+      border: 10px solid blue;
+      border-radius: 10px;
+  }
+  
+  .project-mini-body {
+      overflow: auto;
+  }
+  
+  .project-mini-pics {
+      max-width: 200px;
+      padding: 5px;
+      float: left;    
+  }
+  
+  p {
+      font-size: 26px;
+  }
+  
+  .home-wrap {
+      overflow: hidden;
+      position: relative;    
+  }
+  
+  .home-bg {
+      opacity: 0.6;
+      position: absolute;
+      left: 0;
+      top: 50px;
+      bottom: 600px;
+      width: 100%;
+      height: 90%;
+      overflow: hidden;
+  }
+  
+  .cascade {
+      width: inherit;
+      height: inherit
+  }
+  
+  .home-projects {    
+      display: inline-block;
+      margin: 3px;
+  }
+  
+  #new-icon {
+      margin-bottom: -26px;
+      position: RELATIVE;
+      margin-right: 220px;
+      margin-top: -7px;
+      color: gold;
+  }
+  
+  .home-projects-pics {
+      aspect-ratio: 5/3;
+      width: 350px;
+      border-radius: 15px;
+      border: 5px solid #03e3fc;
+  }
+  
+  .home-content {
+      position: relative;
+  }
+  
+  .home-subtitle {
+      text-align: center;
+      position: center;
+      margin-bottom: 20px;
+  }
+  
+  .home-body-right {
+      position: relative;
+      float: right;
+      text-align: center;
+      max-width: 1100px;
+      max-height: 765px;
+      overflow: hidden;
+      margin-right: -265px;
+  }
+  
+  .home-body {
+      position: relative;
+      max-width: 1920px;
+      max-height: 760px;
+  }
+  
+  .project-intro {
+      float: left;
+  }
+  
+  
+  #otter {
+      float: left;
+      width: 40%;
+      margin-top: 10px;
+      margin-left: -100px;
+  }
+  
+  #comment {
+      border: 5px solid #03e3fc;
+  }
