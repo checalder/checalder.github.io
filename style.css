@@ -162,6 +162,8 @@ iframe {
       border: 5px solid #03e3fc;
   }
 
-#mainetnence {
-    width : 80%;
+#maintenence{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
