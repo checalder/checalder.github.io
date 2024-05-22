@@ -163,7 +163,5 @@ iframe {
   }
 
 #maintenence{
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
+    min-width: 200vw;
 }
