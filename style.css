@@ -163,5 +163,5 @@ iframe {
   }
 
 #maintenence{
-    width: 80vw;
+    min-width: 80vw;
 }
