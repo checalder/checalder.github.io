@@ -163,8 +163,7 @@ iframe {
   }
 
 #maintenence{
-    width: 100vh;
-    height: 80%;
-    object-fit: cover;
-    margin-right: 10px;
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
