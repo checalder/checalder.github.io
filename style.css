@@ -161,3 +161,10 @@ iframe {
   #comment {
       border: 5px solid #03e3fc;
   }
+
+#maintenence{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    margin-right: 10px;
+}
