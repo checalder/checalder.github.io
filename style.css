@@ -164,4 +164,6 @@ iframe {
 
 #maintenence{
     width: 98vw;
+    max-height: 90%;
+    object-fit:contain;
 }
