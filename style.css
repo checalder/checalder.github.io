@@ -142,7 +142,7 @@ iframe {
   
   .home-body {
       position: relative;
-      max-width: 1920px;
+      max-width: 100%;
       max-height: 760px;
   }
   
