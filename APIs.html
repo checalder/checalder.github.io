@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    
+</head>
+<body>
+    <img id="123">
+    <script>
+        async function Catty(){
+            let response = await fetch("https://api.thecatapi.com/v1/images/search");
+            let json = await response.json();
+            document.getElementById("123").setAttribute("src", json[0].url)                
+        }        
+        Catty();
+    </script>
+</body>
