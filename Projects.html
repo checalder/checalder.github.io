@@ -20,9 +20,9 @@
             <img src="media/github.png">    
         </div>  
         <div class="project-text">
-            <h1>
+            <h1 class="project-header">
                 <a href="https://github.com/checalder">Github</a>
-            </h1>
+            </h1 class="project-header">
             <p>Here's my Github profile with all my other active projects, check regularly for updates on some of these projects aswell as the source code for my website here! My website is being hosted by github pages.</p>
         </div>
     </div>
@@ -32,7 +32,7 @@
             <img src="media/pong.jpg">    
         </div>  
         <div class="project-text">
-            <h1>Pong</h1>
+            <h1 class="project-header">Pong</h1 class="project-header">
             <p>Heres my pong game I made with python and the turtle module some time in 2021. It took me a few days to make but was a fun project to do.</p>
         </div>
     </div>
@@ -42,7 +42,7 @@
             <img src="media/Rolldeezballz.jpg"/>
         </div>        
         <div class="project-text">
-            <h1><a href="https://play.unity.com/mg/other/webgl-builds-324513">RollDaBall</a></h1>
+            <h1 class="project-header"><a href="https://play.unity.com/mg/other/webgl-builds-324513">RollDaBall</a></h1 class="project-header">
             <p>This is a game I made in unity as my first ever project. I had alot of fun with this, trying to understand the basics of the unity class libraries was (and still is) quite challenging but I managed to make this with it. Also, the sensational music in this was also created by me... unfortunately. Click the link above to play in another window!
         </div>
     </div>
@@ -53,7 +53,7 @@
         </div>           
 
         <div class="project-text">
-            <h1>My Website!</h1>
+            <h1 class="project-header">My Website!</h1 class="project-header">
             <p>This website that you're on was made using razor pages with asp.net! This has been a long undertaking and I have been learning the razorpages syntax and web devlopment by myself.</p>
         </div>
 
@@ -62,13 +62,13 @@
                 <li>
                     <div class="project-mini-body">
                         <img class="project-mini-pics" src="media/website-down.png" />
-                        <p style="margin: 10px">01/06/24 - have temporarily taken down the website for "maintenence", i intend to revamp the user experience on moble as up to now it has been pretty atrocious. Created a new landing page "down for maintenence!". I intend to completely ditch asp.net and convert the website to pure html, javascript, and css.</p>
+                        <p style="margin: 10px">01/06/24 - Temporarily taken down the website for "maintenence", i intend to revamp the user experience on mobile as up to now it has been pretty atrocious. Created a new landing page "down for maintenence!". I intend to completely ditch asp.net and convert the website to pure html, javascript, and css.</p>
                     </div>
                 </li>  
                 <li>
                     <div class="project-mini-body">
                         <img class="project-mini-pics" src="media/website-new.png" />
-                        <p style="margin: 10px">20/06/24 - have recently completely revamped the website, working with viewport units and adapting to mobile has been a learning experience for me and has enabled me to write dynamic webpages as you can see. It was especially important to get my website working on mobile for its accessibilty as I found the majority of users are in fact on mobile. this revamp has been an ongoing process but hasa now come to a close after alot of css work.</p>
+                        <p style="margin: 10px">20/06/24 - Have recently completely revamped the website, working with viewport units and adapting to mobile has been a learning experience for me and has enabled me to write dynamic webpages as you can see. It was especially important to get my website working on mobile for its accessibilty as I found the majority of users are in fact on mobile. this revamp has been an ongoing process but has now come to a close after alot of css work.</p>
                     </div>
                 </li>           
             </ul>
@@ -83,7 +83,7 @@
         </div>        
 
         <div class="project-text">
-            <h1><a href="https://play.unity.com/mg/other/webgl-builds-303185">Animal Run</a></h1>
+            <h1 class="project-header"><a href="https://play.unity.com/mg/other/webgl-builds-303185">Animal Run</a></h1 class="project-header">
             <p>In this game, you have to stop the stampeding animals from getting past you, throw food at them to get rid of them. I created the initial version back around December of 2022 as part of the Unity Junior Programmer course projects. Click the link above to play in another window!</p>
         </div>
 
@@ -130,7 +130,7 @@
         </div>
 
         <div class="project-text">
-            <h1>Horde Attack (WIP)</h1>
+            <h1 class="project-header">Horde Attack (WIP)</h1 class="project-header">
             <p>This work in progress, my initial vision for this project is an topdown isometric type game with zombiesque creatures that attack you. </p>
         </div>
 
@@ -165,22 +165,24 @@
 
     <div class="project" id="zelda">
         <div class="project-text">
-            <h1>Zelda Prototype (WIP)</h1>
+            <h1 class="project-header">Zelda Prototype (WIP)</h1 class="project-header">
             <p style="width: 77svw;">I want to make an adventure game similar to the legend of zelda ocarina of time. The idea came to me and I have been meaning to work on it ever since.</p>
         </div>
-        <ul>
-            <li>
-                <div class="project-mini-body">
-                    <img class="project-mini-pics" src="media/camwork.jpg" />
-                    <p style="margin: 10px">10/06/2023 - To start with, I have been experimenting with the camera and control types. The objecitve was to make the camera move with the mouse which is much harder than you might expect. I have had to delve much deeper into unity's new input system which can get very complicated. Then use the input to alter the rotation of the camera. This is difficult to do because the camera rotation values are in quaternions and quaternions should never be directly altered in unity unless absolutely neccesary. Thus i had to convert values back and forth between vector3s and quaternions which got very complicated, however, now i have a working camera system that can be re-used in any first person or 3rd person game i make.</p>
-                </div>
-            </li>
-            <li>
-                <div class="project-mini-body">
-                    <img class="project-mini-pics" src="media/cam3rd.jpg" />
-                    <p style="margin: 10px">14/06/2023 - Now the problem with the third person camera is that the character is always over the shoulder of the player. This is fine apart from when the player wants to run away but still be able to move the camera to look around independantely like in an open world game such as GTA or, as is the ultimate goal of this project, The legend of zelda. I will be working on this next.</p>
-                </div>
-            </li>
-        </ul>       
+        <div class="updates">
+            <ul>
+                <li>
+                    <div class="project-mini-body">
+                        <img class="project-mini-pics" src="media/camwork.jpg" />
+                        <p style="margin: 10px">10/06/2023 - To start with, I have been experimenting with the camera and control types. The objecitve was to make the camera move with the mouse which is much harder than you might expect. I have had to delve much deeper into unity's new input system which can get very complicated. Then use the input to alter the rotation of the camera. This is difficult to do because the camera rotation values are in quaternions and quaternions should never be directly altered in unity unless absolutely neccesary. Thus i had to convert values back and forth between vector3s and quaternions which got very complicated, however, now i have a working camera system that can be re-used in any first person or 3rd person game i make.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-mini-body">
+                        <img class="project-mini-pics" src="media/cam3rd.jpg" />
+                        <p style="margin: 10px">14/06/2023 - Now the problem with the third person camera is that the character is always over the shoulder of the player. This is fine apart from when the player wants to run away but still be able to move the camera to look around independantely like in an open world game such as GTA or, as is the ultimate goal of this project, The legend of zelda. I will be working on this next.</p>
+                    </div>
+                </li>
+            </ul>       
+        </div>
     </div>
 </body>

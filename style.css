@@ -3,7 +3,7 @@ button {
 }
 
 h1{
-    font-size: 3svh;
+    font-size: 4svh;
 }
 p {
     font-size: clamp(2.5SVH,2.5svh,3rem);
@@ -23,12 +23,14 @@ body {
     background-color: azure;
 }
 
-nav{
+nav {
     background-color: azure;
     margin-left: 10svw;
     margin-right: 10svw;
+    margin-top: 1svw;
+    margin-bottom: 1svw;
     text-align: center;
-    font-size: 1.3vw;
+    font-size: clamp(4svw, 4svh, 10svh);
 }
 
 img {
@@ -44,6 +46,7 @@ li{
 #project-header {
     font-size: clamp(2svh,2svw,3rem);
 }
+
 #home-body{
     /* background-image: url("media/spain (3).jpg");
     background-repeat: repeat-y;
@@ -55,9 +58,8 @@ li{
 }
 
 #otter {
-    height: 60%;
     aspect-ratio: 1/1;
-    width: 38%;
+    width: 35%;
     border-radius: 100%;
 }
 
@@ -86,9 +88,26 @@ li{
 
    #home-intro {
     height: auto;
-    padding: 3vw;
-    border-bottom: 1svh solid cadetblue;
+    padding: 4vw;
+    /* border-bottom: 1svh solid cadetblue; */
+    margin-left: 2svh;
+    margin-right: 2svh;
+}
 
+#home-content-body {
+    position: relative;
+    max-width: 100svw;
+    max-height: 760px;
+}
+
+.updates-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-header{
+    margin:0%
 }
 
 .update-home-pics {
@@ -98,14 +117,14 @@ li{
 .update-home-text {
     float: left;
     margin: 10px;
-    /* width: 40svh; */
+    width: 100%;
 }
 
 .update-home {
     display: inline-block;
-    /* border: 10px solid cadetblue; */
+    text-align: center;
     border-top: 0;
-    max-width: 70svh;
+    max-width: 68svh;
     margin-top: 1svh;
 }
 
@@ -114,7 +133,7 @@ li{
     position: relative;
   }
 
-  .demo-bg {
+.demo-bg {
     border: 0px;
     border-radius: 0%;
     opacity: 0.6;
@@ -126,7 +145,7 @@ li{
   }
 
   .project-text {
-    max-width: 65svh;
+    max-width: 62svh;
     margin: 1svh;
     /* font-size: clamp(1.8rem,2svw,10svw); */
 }
@@ -168,11 +187,12 @@ li{
 }
 
 .header {
+    margin-top: 0;
     margin-bottom: 2svw;
     text-align: center;
-    font-size: 3vw;
+    font-size: 4.5vw;
     text-decoration: underline;
-  }
+}
 
 #home-wrap {
     overflow: hidden;
@@ -209,10 +229,11 @@ li{
 }
 
 .home-subtitle {
-  width: 58%;
+    width: 60%;
     float: right;
     text-align: center;
-    font-size: 6vw;
+    font-size: 4.5vw;
+    margin: auto;
 }
 
 .home-body-right {
@@ -225,11 +246,7 @@ li{
 }
 
 
-#home-content-body {
-    position: relative;
-    max-width: 100svw;
-    max-height: 760px;
-}
+
 
 .project-intro {
     float: left;
@@ -240,5 +257,15 @@ li{
   @media (max-width: 768px) {
     .project{
         margin: 0;
+    }
+
+    .updates-home{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .updates{
+        margin-left: 0;
+        margin-right: 0;
     }
   }

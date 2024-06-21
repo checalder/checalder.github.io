@@ -5,95 +5,104 @@
 </head>
 
 <body id="home-body">
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="Projects.html">Projects</a>
-        <a href="APIs.html">APIs</a>
-        <!-- <a href="Music.html">Music</a>
-        <a href="Photography.html">Photography</a>        
-        <a href="Sports.html">Sports</a>
-        <a href="temp.html">Temp</a> -->
-    </nav>
+   
     <div id="home-wrap">
         <div class="home-content">
 
             <h1 class="header">Welcome To CheCalder.com</h1>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="Projects.html">Projects</a>
+                <a href="APIs.html">APIs</a>
+                <a href="index.html#updates-home">Forum</a>
+                <!-- <a href="Music.html">Music</a>
+                <a href="Photography.html">Photography</a>        
+                <a href="Sports.html">Sports</a>
+                <a href="temp.html">Temp</a> -->
+            </nav>  
+
             <div id="home-intro">
                 <img id="otter" src="media/suited.jpg"/>              
-                <h2 class="home-subtitle">Welcome to my personal website, Have a look around and see whats up!</h2>
+                <h2 class="home-subtitle">Welcome to my personal website, Have a look around and see whats up!<br>Updates listed below!</h2>
             </div>
 
-            <div class="update-home">
-                <a href="Projects.html#website">
-                    <img class="update-home-pics" src="media/website-new.png" href=""/>
-                </a>                
-                <div class="update-home-text">
-                    <p style="margin: 10px">20/06/24 - have recently completely revamped the website, working with viewport units and adapting to mobile has been a learning experience for me and has enabled me to write dynamic webpages as you can see. It was especially important to get my website working on mobile for its accessibilty as I found the majority of users are in fact on mobile. this revamp has been an ongoing process but hasa now come to a close after alot of css work.</p>
-                </div>                  
-            </div>
+            <div class="updates-home" id="updates-home">
 
-            <div class="update-home" style="float: right">
-                <a href="Projects.html#website">
-                    <img class="update-home-pics" src="media/website-down.png">
-                </a>
-                <div class="update-home-text">
-                    <p style="margin: 10px; float: left;">01/06/24 - have temporarily taken down the website for "maintenence", i intend to revamp the user experience on moble as up to now it has been pretty atrocious. Created a new landing page "down for maintenence!"</p>
-                </div>                  
-            </div>
+                <div class="update-home">
+                    <a href="Projects.html#website">
+                        <img class="update-home-pics" src="media/website-new.png" href=""/>
+                    </a>                
+                    <div class="update-home-text">
+                        <p style="margin: 10px">20/06/24 - Have recently completely revamped the website, working with viewport units and adapting to mobile has been a learning experience for me and has enabled me to write dynamic webpages as you can see. It was especially important to get my website working on mobile for its accessibilty as I found the majority of users are in fact on mobile. this revamp has been an ongoing process but has now come to a close after alot of css work.</p>
+                    </div>
+                </div>
 
-            <!-- <div id="home-content-body">
-                <div class="home-projects" id="pong-index">
-                    <a href="Projects/#pong" class="cascade">
-                        <img
-                            class="home-projects-pics"
-                            src="media/pong.jpg"/>
+                <div class="update-home" style="float: right">
+                    <a href="Projects.html#website">
+                        <img class="update-home-pics" src="media/website-down.png">
                     </a>
-                </div> -->
+                    <div class="update-home-text">
+                        <p style="margin: 10px; float: left;">01/06/24 - Temporarily taken down the website for "maintenence", i intend to revamp the user experience on mobile as up to now it has been pretty atrocious. Created a new landing page "down for maintenence!". I intend to completely ditch asp.net and convert the website to pure html, javascript, and css.</p>
+                    </div>
+                </div>
+
                 
-                <!--<div class="home-projects" id="rolldeezballz-index">
-                    <a href="Projects/#rolldeezballz" class="cascade">
-                        <img
-                            class="home-projects-pics"
-                            src="media/Rolldeezballz.jpg"/>
-                    </a>
-                </div>
 
-                <div class="home-projects" id="website-index">
-                    <a href="Projects/#website" class="cascade">
-                        <img class="home-projects-pics"
-                            src="media/website pic.jpg"/>
-                    </a>
-                </div>
-
-                <div class="home-projects" id="animal-run-index">
-                    <a href="Projects/#animal run" class="cascade" style="text-decoration: none;">
-
-                        <img style="margin-top: 10px;"
+                <!-- <div id="home-content-body">
+                    <div class="home-projects" id="pong-index">
+                        <a href="Projects/#pong" class="cascade">
+                            <img
                                 class="home-projects-pics"
-                                src="media/animal run 2.0.png" />
-                    </a>
-                </div>
-
-                <div class="home-projects" id="horde-index">
-                    <a href="Projects/#horde" class="cascade">
-
-                        <img style="margin-top: 10px;"
+                                src="media/pong.jpg"/>
+                        </a>
+                    </div> -->
+                    
+                    <!--<div class="home-projects" id="rolldeezballz-index">
+                    </div>
+                
+                        <a href="Projects/#rolldeezballz" class="cascade">
+                            <img
                                 class="home-projects-pics"
-                                src="media/horde page.jpg" />
-                    </a>
-                </div>
+                                src="media/Rolldeezballz.jpg"/>
+                        </a>
+                    </div>
 
-                <div class="home-projects" id="zelda-index">
-                    <a href="Projects/#zelda" class="cascade" style="text-decoration: none;">
+                    <div class="home-projects" id="website-index">
+                        <a href="Projects/#website" class="cascade">
+                            <img class="home-projects-pics"
+                                src="media/website pic.jpg"/>
+                        </a>
+                    </div>
 
-                        <h2 id="new-icon">NEW!</h2>
-                        <img style="margin-top: 10px;  border: 5px solid #ad0a30;"                        
-                            class="home-projects-pics"
-                            src="media/camwork.jpg" />
-                    </a>
-                </div>
-            </div>-->
+                    <div class="home-projects" id="animal-run-index">
+                        <a href="Projects/#animal run" class="cascade" style="text-decoration: none;">
 
+                            <img style="margin-top: 10px;"
+                                    class="home-projects-pics"
+                                    src="media/animal run 2.0.png" />
+                        </a>
+                    </div>
+
+                    <div class="home-projects" id="horde-index">
+                        <a href="Projects/#horde" class="cascade">
+
+                            <img style="margin-top: 10px;"
+                                    class="home-projects-pics"
+                                    src="media/horde page.jpg" />
+                        </a>
+                    </div>
+
+                    <div class="home-projects" id="zelda-index">
+                        <a href="Projects/#zelda" class="cascade" style="text-decoration: none;">
+
+                            <h2 id="new-icon">NEW!</h2>
+                            <img style="margin-top: 10px;  border: 5px solid #ad0a30;"                        
+                                class="home-projects-pics"
+                                src="media/camwork.jpg" />
+                        </a>
+                    </div>
+                </div>-->
+    
+            </div>
         </div>
-    </div>
 </body>
