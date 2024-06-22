@@ -13,8 +13,8 @@
             <nav class="navbar">
                 <a href="index.html">Home</a>
                 <a href="Projects.html">Projects</a>
-                <a href="APIs.html">APIs</a>
-                <a href="index.html#updates-home">Forum</a>
+                <a href="index.html#updates-home">Updates</a>
+                <a href="Cat.html">Cat</a>
                 <!-- <a href="Music.html">Music</a>
                 <a href="Photography.html">Photography</a>        
                 <a href="Sports.html">Sports</a>
@@ -27,24 +27,176 @@
             </div>
 
             <div class="updates-home" id="updates-home">
-
                 <div class="update-home">
                     <a href="Projects.html#website">
                         <img class="update-home-pics" src="media/website-new.png" href=""/>
                     </a>                
                     <div class="update-home-text">
-                        <p style="margin: 10px">20/06/24 - Have recently completely revamped the website, working with viewport units and adapting to mobile has been a learning experience for me and has enabled me to write dynamic webpages as you can see. It was especially important to get my website working on mobile for its accessibilty as I found the majority of users are in fact on mobile. this revamp has been an ongoing process but has now come to a close after alot of css work.</p>
+                        <p>
+                            20/06/24 - Have recently completely revamped the website, working with viewport units and adapting to mobile has been a learning experience for me and has enabled me to write dynamic webpages as you can see. It was especially important to get my website working on mobile for its accessibilty as I found the majority of users are in fact on mobile. this revamp has been an ongoing process but has now come to a close after alot of css work.
+                        </p>
                     </div>
                 </div>
 
-                <div class="update-home" style="float: right">
+                <div class="update-home">
+                    <a href="Projects.html#website">
+                        <img class="update-home-pics" src="media/thecatapi.png" alt="">
+                    </a>
+                    <div class="update-home-text">
+                        <p>10/06/2024 - APIs are used to communicate betweena a webpage and a database, for obvious reasons, this is a a cruical skill to have in webdevelopment and I have begun learning how to use and eventually create one. Developers that create APIs can then reuse or share their apis to others and so I have implemented "TheCatAPI" that fetches a random cat image. I have put this in its own page called <a href="Cat.html">Cat.html</a> To do this, I had to learn about asyncrounous functions and the different ES6 and ES8 versions of javascript.</p>
+                    </div>
+                </div>
+
+                <div class="update-home">
                     <a href="Projects.html#website">
                         <img class="update-home-pics" src="media/website-down.png">
                     </a>
                     <div class="update-home-text">
-                        <p style="margin: 10px; float: left;">01/06/24 - Temporarily taken down the website for "maintenence", i intend to revamp the user experience on mobile as up to now it has been pretty atrocious. Created a new landing page "down for maintenence!". I intend to completely ditch asp.net and convert the website to pure html, javascript, and css.</p>
+                        <p>
+                            01/06/24 - Temporarily taken down the website for "maintenence", i intend to revamp the user experience on mobile as up to now it has been pretty atrocious. Created a new landing page "down for maintenence!". I intend to completely ditch asp.net and convert the website to pure html, javascript, and css.
+                        </p>
                     </div>
                 </div>
+
+                <div class="update-home">
+                    <a href="Projects.html#zelda">
+                        <img class="update-home-pics" src="media/cam3rd.jpg">
+                    </a>
+                    <div class="update-home-text">
+                        <p>
+                            14/06/2023 - Now the problem with the third person camera is that the character is always over the shoulder of the player. This is fine apart from when the player wants to run away but still be able to move the camera to look around independantely like in an open world game such as GTA or, as is the ultimate goal of this project, The legend of zelda. I will be working on this next.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="update-home">
+                    <a href="Projects.html#zelda">
+                        <img class="update-home-pics" src="media/camwork.jpg">
+                    </a>
+                    <div class="update-home-text">
+                        <p>
+                            10/06/2023 - To start with, I have been experimenting with the camera and control types. The objecitve was to make the camera move with the mouse which is much harder than you might expect. I have had to delve much deeper into unity's new input system which can get very complicated. Then use the input to alter the rotation of the camera. This is difficult to do because the camera rotation values are in quaternions and quaternions should never be directly altered in unity unless absolutely neccesary. Thus i had to convert values back and forth between vector3s and quaternions which got very complicated, however, now i have a working camera system that can be re-used in any first person or 3rd person game i make.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="update-home">
+                    <a href="Projects.html#horde">
+                        <img class="update-home-pics" src="media/horde-barbie.png">
+                    </a>
+                    <div class="update-home-text">
+                        <p>
+                            28/04/2024 - I Have Finished My Horde Project! I pivotted the idea instead to a lady getting chased by zombie barbie dolls - Renaming the project to "BARBIE ZOMBIES!", complete with a similar life system to my animal run game and is availible on unity play <a href="https://play.unity.com/mg/other/webgl-builds-385456">HERE!</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="update-home">
+                    <a href="Projects.html#animal run">
+                        <img class="update-home-pics" src="media/secret.jpg">
+                    </a>
+                    <div class="update-home-text">
+                        <p>
+                            21/03/2023 - I added boss music and victory music aswell as a final secret 6th level that is only accessed upon beating level 5. The 6th level goes on forever and gets harder over time so no matter what you will lose eventually, but this allows players to get their own unique highscore past the winscreen. Furthermore, I have finetuned the animal speed and spawn rates on each of the levels to be more fair but also challenging - I think i have it just right. Overall, I feel finished with this project and am very satisfied with how it is now.</p>
+                    
+                    </div>
+                </div>
+
+                <div class="update-home">
+                    <a href="Projects.html#animal run">
+                        <img class="update-home-pics" src="media/boss.jpg">
+                    </a>
+                    <div class="update-home-text">
+                        <p>20/03/2023 - With the life, slot and reloading system added; I decided to separate the difficuly increases into levels that change with the terrain. I have also implemented a final boss type character on stage 5 which is essentially just a big chicken that takes more food to kill but moves slower on the screen aswell as the other animals.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="update-home">
+                    <a href="Projects.html#animal run">
+                        <img class="update-home-pics" src="media/reloadingg.jpg">
+                    </a>
+                    <div class="update-home-text">
+                        <p>19/03/2023 - I finished off the inventory slot system and reloading system today and have been working on adding in a progressive difficulty that constantly increases as the game goes on. Again, I have been working at this all day long.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="update-home">
+                    <a href="Projects.html#animal run">
+                        <img class="update-home-pics" src="media/inv slot.jpg">
+                    </a>
+                    <div class="update-home-text">
+                        <p>18/03/2023 - I've been trying to implement an inventory bar that shows the next food item to be shot. I also am implementing a reload feature with its own reload icon on the corresponding inventory slot that must be held down to reload your food objects. I have been working on the game all day for more or less 14 hours straight as there is so much to this. It has been quite the undertaking but it is finally coming together, I almost have it working perfectly.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="update-home">
+                    <a href="Projects.html#animal run">
+                        <img class="update-home-pics" src="media/lives.jpg">
+                    </a>
+                    <div class="update-home-text">
+                        <p>17/03/2023 - I decided to revisit this project, adding in and improving on various features. I added in a three heart life system and uploaded it to unity play so it could be played in a browser.</p>
+                         </p>
+                    </div>
+                </div>
+
+                <div class="update-home">
+                    <a href="Projects.html#horde">
+                        <img class="update-home-pics" src="media/Raycasting-in-Unity.jpg">
+                    </a>
+                    <div class="update-home-text">
+                        <p>10/03/2023 - Finally figured out how to make the player look at the mouse, had to use raycasts from the mouse screen position, then detect the position of the ray collision in the actual world space, bind an empty game object to that collision position, then have the player look at that game object constantly. It Feelt great to figuere this out in particular.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="update-home">
+                    <a href="Projects.html#horde">
+                        <img class="update-home-pics" src="media/slash.jpg">
+                    </a>
+                    <div class="update-home-text">
+                        <p>23/02/2023 - I've downloaded a few sword models and bound one to the player models hand. When they attack, the game object is activated and leaves a cool trail behind too. Additionally, I added in Collision detection with the zombies exclusively and have their game object be destroyed if hit by the player.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="update-home">
+                    <a href="Projects.html#horde">
+                        <img class="update-home-pics" src="media/zombie chase character.jpg">
+                    </a>
+                    <div class="update-home-text">
+                        <p>11/02/2023 - I have now scripted the behaviour of the zombies, they simply spawn as a clone in the same spot at intervals and follow the player. I programmed their heads to constantly look at and follow the player, their models are simple geometric shapes still tho.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="update-home">
+                    <a href="Projects.html#horde">
+                        <img class="update-home-pics" src="media/model.jpg">
+                    </a>
+                    <div class="update-home-text">
+                        <p>02/02/2023 - So far i have downloaded a character model and managed to animate the player when they move.</p>
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <!-- EMPTY UPDATE TEMPLATE;
+
+                <div class="update-home">
+                    <a href="">
+                        <img class="update-home-pics" src="media/">
+                    </a>
+                    <div class="update-home-text">
+                        <p>
+                        </p>
+                    </div>
+                </div
+
+                 -->
 
                 
 
