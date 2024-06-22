@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <head>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <img id="123">
-    <script>
-        async function Catty(){
-            let response = await fetch("https://api.thecatapi.com/v1/images/search");
-            let json = await response.json();
-            document.getElementById("123").setAttribute("src", json[0].url)                
-        }        
-        Catty();
-    </script>
+
+<script>
+    async function Catty(){
+        let response = await fetch("https://api.thecatapi.com/v1/images/search");
+        let json = await response.json();
+        document.getElementById("123").setAttribute("src", json[0].url)                
+    }        
+    Catty();
+</script>
+
+<body style="text-align: center;">
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="Projects.html">Projects</a>
+        <a href="index.html#updates-home">Updates</a>
+        <a href="Cat.html">Cat</a>
+    </nav>
+
+    <button style="font-size: 4svh; color: black;" onClick="window.location.reload();">NEW CAT</button>
+    <br>
+
+    <img id="123" style="all: unset">
+    
+    
 </body>
