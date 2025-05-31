@@ -1,0 +1,3 @@
+noise() is same as random, can multiply by framecount, noise however, just makes it close to the current value every time its called within a range provided, it can take away or add to it
+
+takes away or adds a random number within the provided range paramater
