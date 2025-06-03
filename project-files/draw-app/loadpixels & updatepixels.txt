@@ -1,0 +1,20 @@
+load pixels is like sayinh lets take a moment to look at the canvas and remember every detail (colour of every pixel) as it is right now, so we can start making changes based on this current picture
+
+
+-- *describing rectangle tool from bot*
+sets the start pos then makes it so the loop does not overwrite the startPos by altering the drawing boolean at the end, this going to the next else statement which draws the rectangle; using the previously specified start pos. When mouse is released, we reset drawing to false and the process can beging again for another rectangle
+--
+
+update pixels deletes the previous changes to the canvas and updates to the next drawloop canvas state.
+
+a canvas state will only be preserved if loadPixels is called, it uploads the changes, then creates a new state for update pixels to work with.
+
+update pixels all drawings from when load pixels is called, until the current frame!
+
+loadpixels takes the current frame and makes that the new start for update pixels!
+
+
+add add add update pixels then loadpixels to save it basically
+
+
+loadpixels and update pixels let you specify what is temporary and what is permanent basically!!!!
