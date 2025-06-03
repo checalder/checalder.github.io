@@ -1,0 +1,119 @@
+(For several tasks, refer to the template Lab solutions from Week 7 to complete the code)
+
+1. [10 marks] Create Cell class. Complete the constructor function to create the Cell class. 
+
+1.1 The constructor function takes 4 attributes: position, velocity, radius and life.
+    - Position and velocity : Vectors
+    - Radius : Float or Integer value
+    - life: Integer value
+1.2 Use the "this" attribute to create attributes of the cell.
+1.3 Create three methods
+    - "Draw" method - Draws an sphere using the position vector and cell's radius.
+    - "move" method - Use Vector addition to update the  the cell position using velocity.
+    - "detectEdge" method (instructions specified later) 
+  
+*Test 1:* 
+In the setup function, test out the constructor function. 
+ - Uncomment the block of code that says, "testcell" along with the console log statements.
+ - What should you see printed in the console if successful?
+
+2. [2 marks] Finish the createCells function. 
+2.1 Create a empty new array
+2.2 Use for loop to fill it with maximum number of cells using cells constructor
+    - Give different values for position, velocity and radius.
+    - Use p5.Vector.random3D() to make 3D unit vectors with random heading.
+2.3 Return the array and store it in global variable "cells".
+2.4 In the setup function, call "createCells" function to create 5 cells on the screen.
+
+*Test 2:* Print the cells array and observe that the arrays are populated.
+
+3. [3 marks] Draw and move the cells 
+
+3.1 In draw function,
+    - Write a for loop to traverse through all the cells
+    - Call the cell's draw method and move method
+
+*Test 3:* Run the code. You should observe cells moving with a velocity. If the cells are in the same position, then you will observe only one cell moving. You will also observe cells moving out of the screen. Try to use small values for velocity to get the cells moving. 
+
+4. [10 marks] Edge detection and reversing velocity - complete the "detectEdge" method in cell 
+    - Let's assume that the cell world that you are creating is a spherical one. You are using the center of the screen (0,0,0) as origin.
+    - The diameter of the world is same as the width of the screen. 
+    - A cell touches the edge of the cell world when the distance between the cell and the origin is > world diameter/2.
+
+4.2  Simple edge detection
+    - Use the dist function to calculate the distance of the cell from the origin
+    - Use conditional statements to check if cell has exceeded the boundary
+    - Change the velocity of the cell if it exceeds the boundary.
+
+4.2 Advanced edge detection with position correction
+    - Use the dist function to calculate the distance of the cell from the origin
+    - Use conditional statements to check if cell has exceeded the boundary
+    - Find the Unit vector along the direction of the cell and the origin.
+    - Reposition the cell along the unit vector to be within the screen. 
+    - Change the velocity of the cell if it exceeds the boundary.
+
+*Test 4:* Try both possible implementations. Cells should now bounce back as they hit the edge the canvas along all axes. 
+With advanced edge detection, cells will not get stuck at the boundaries.
+
+5. [10 marks] Cell collision. Complete the "CollideCells" function. Pass the cells array.
+
+5.1 Simple collision detection 
+    - Write two for loops.
+    - In the outer loop, store the value in cell1
+    - In the inner loop, store value as cell2
+    - Check if cell1 and cell2 are not the same (using their indices)
+    - Detect collision.
+        - Compute the distance between the cell centres.
+        - Check if this value is less than sum of radii.
+    - If there is collision,
+        - Reverse the velocity of both the cells.
+
+5.2 Advanced collision detection with position correction and velocity 
+    - Change the collision detection logic from above.
+    - When collision is detected,
+        - Compute the distance between cells during collision.
+        - Re position the cells so that they are not colliding.
+        - Find the Unit vector along the direction of collision of two cells by computing the difference between their velocities
+        - Compute new velocities for cells in opposite directions using Unit vector and current magnitude of velocities.
+        - Store it as new velocity of the cells.
+
+*Test 5:* Test this with 5 cells only. Use print statements within collision detection to observe that logic works correctly.
+With advanced collision, cells will not get stuck next to one another. If working is 3D is difficult, first work in 2D. Observe that the logic remains the same.
+
+**Make another copy of the code before you try this.**
+
+6. [6 points] Adding a life counter to each cell
+   6.1 Cell methods
+    - Add a life counter during the initialisation of the cell
+    - Write a method inside Cell class to check if live counter is < 0 for every draw function
+    - If the counter
+   6.2 In draw function, 
+    - Decreases life by 1 for every update.  
+    - When life is 0, the cell vanishes from the screen.
+    - Read up on array.splice in Javascript to implement this.
+   6.4 Experiment with random life counter.
+
+*Test 6:* Test this with 5 cells only. Experiment with the life counter of 100 at the beginning. Refer to simple examples of array.splice to ensure that you understand the logic before using it on more cell array. cells will not get stuck next to one another. If working is 3D is difficult, first work in 2D. Observe that the logic remains the same.
+
+7. [4 points] Code commenting. Comments and clear descriptions of code and extra additions.
+
+EXTRA:
+
+ 1. [10 points] Better drawing 
+    - [5 points] Cells drawn with different colors, sizes, textures, and animations.
+    - [2 points] Cells have types that are drawn differently than just spheres
+    - [3 points] Cells are drawn differently by age (color, shape, texture, speed, etc.)
+ 
+ 2. [5 points] Objects that repel or attract Cells. 
+    - E.g. Adding a gravitational forces to each cell 
+        - Acceleration is added to velocity for every update. Similar to how velocity is added to position.
+        - Add a constant acceleration (e.g., gravity) and ensure that the cells keep falling towards the bottom of screen.
+    - E.g., Apply a force (friction) to ensure that the cells slow down after moving for certain amount of time.
+    - E.g., Apply a force on the object influence its acceleration instead of changing velocity.
+
+3. [6 points] Mitosis
+    - Similar to life counter, add a Mitosis counter.
+    - The Mitosis counter increases for every update and when it reaches a specific value, a new child cell is spawned and added to cells array.
+    - Both the diameter of the parent and the child cell are half the original radius of parent cell.
+
+4. [3 points] Surprise us -- add a relevant object to the center of the world. E.g., a 3D sculpture in the centre of the world.

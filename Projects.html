@@ -251,7 +251,9 @@
                     <div class="project-mini-body">
                         <img class="project-mini-pics" src="media/nand2tetris.png" />
                         <p style="margin: 10px">
-                            01/12/2025 - Computers on a foundational theoretical level work in a series of combinational logic gates to make decisions, and to better understand this applied logic, i am going through a reccomended course called <a href="https://www.coursera.org/learn/build-a-computer">nand2tetris</a> on coursera. The goal is essentially to make the various chips such as MUX, ANDs, ORs and more complex chips such as MUX32 chips which take multiple input bits and multiplex them. This is an important prerequisite to better prepare my understanding of computing down to the physical level. I have been creating these logic chips in hardware simulator software, first by drawing diagrams then implementing the logic within code and it is very interesting.
+                            01/12/2025 - At a foundational level, computers operate using combinational logic gates to make decisions. To get a better grasp of how this logic works in practice, I’ve been working through a recommended Coursera course called <a href="https://www.coursera.org/learn/build-a-computer">nand2tetris</a>. The goal is to build a range of logic chips, starting with basic gates like AND, OR, and MUX, and progressing to more complex components like MUX32 chips that handle multiple input bits and multiplex them.
+
+                            This course is helping me deepen my understanding of how computing works right down to the physical level. I’ve been using hardware simulator software to design and test these chips — first by sketching out logic diagrams, then by coding and simulating their behaviour. It’s been a really interesting way to connect theory with actual hardware design.
                         </p>
                     </div>
                 </li>
@@ -261,11 +263,51 @@
 
     <div class="project" id="collage">
         <div class="project-pics">
-            <img src="media/doggies.png" />
+            <a href="Project Files/collage-project-main/index.html"><img src="media/doggies.png" /></a>
         </div>
         <div class="project-text">
-            <h1 class="project-header">Uni Projects</h1>
-            <h2><a href="collage-project-main/index.html">Collage</a></h2>
+            <a href="Project Files/collage-project-main/index.html"><h1 class="project-header">Graphics Collage</h1></a>
+            <p style="margin: 10px">
+                15/06/2024 - This project is a graphics collage I built in p5.js to explore experimental image manipulation. It blends multiple layered images using techniques like blendMode(), tint(), and filter(INVERT) to create glitchy, animated visuals.
+
+                One of the main techniques I used was slicing an image into horizontal bands and dynamically adjusting each slice’s width with Perlin noise. This creates smooth, organic distortions that constantly shift while the sketch runs. I used get() to crop slices from the image and inverted the colours in real time before placing them back on the canvas.
+
+                I also added layered motion using sine waves and noise to animate a bunch of floating eyeballs. These use blendMode(DIFFERENCE) to create contrast-heavy, reactive visuals that change depending on what’s behind them. This added another layer of randomness and movement to the piece.
+
+                The whole collage plays with contrast, layering, and visual feedback to create a surreal effect. I learned a lot about how to combine image sources and control their behaviour using built-in p5 functions. It was mostly about experimenting with rhythm, motion, and disruption using image data.
+            </p>
+        </div>
+    </div>
+
+    <div class="project" id="draw-app">
+        <div class="project-pics">
+            <a href="Project Files/draw-app/index.html"><img src="media/draw app.png" /></a>
+        </div>
+        <div class="project-text">
+            <a href="Project Files/collage-project-main/index.html"><h1 class="project-header">Drawing App</h1></a>
+            <p style="margin: 10px">
+                20/06/2024 - This is a browser-based drawing app I built using p5.js and JavaScript. I focused on making it interactive and fun to use, with tools that behave in realistic ways. One of the main features I added was the spray tool, which randomly scatters dots around the mouse to mimic a spray can. It keeps going while the mouse is held down, and I added sliders for spread and density so users can tweak how it behaves. I hooked this up using DOM elements and linked them to the tool with JavaScript, so everything updates live.
+
+                Another big part was the rectangle tool. Getting this working properly meant figuring out how loadPixels() and updatePixels() actually affect what’s shown on the canvas. I used them to show a live preview of the rectangle while dragging, and then locked it in when the mouse is released.
+
+                The tools are all separate files and connected through a toolbox system, which makes everything modular and easy to update or expand later. I kept things simple and user-friendly with clear icons and controls. Overall, I’m happy with how it turned out — it’s stable, does what I wanted, and feels satisfying to use.
+            </p>
+        </div>
+    </div>
+
+    <div class="project" id="animated-cells">
+        <div class="project-pics">
+            <a href="Project Files/animated-cells/index.html"><img src="media/balls.png" /></a>
+        </div>
+        <div class="project-text">
+            <a href="Project Files//index.html"><h1 class="project-header">Animated Cells</h1></a>
+            <p style="margin: 10px">
+                22/06/2024 - This project is a 3D simulation of moving cells built using p5.js with WEBGL. Each cell has its own position, velocity, and size, and they bounce around inside a 3D box. When two cells collide, they bounce off each other and lose a bit of their size — once a cell gets too small, it’s removed from the simulation entirely.
+
+                The cells are coloured based on their size using HSB values, so as they shrink, their colour shifts in real time. I used vector math for position and velocity tracking, and added proper collision detection using 3D distance calculations and basic kinematics. Cells also detect and react to hitting the walls, reversing direction and correcting their position if they go out of bounds.
+
+                It was a fun way to play around with motion, forces, and spatial interaction in 3D. I also learned a lot about vector operations and how to structure reusable object-oriented code in p5.js. I’ve been experimenting with adding more behaviours too — like growth conditions and better lighting — but as it is now, it’s already pretty satisfying to watch and tweak live in the browser.
+            </p>
         </div>
     </div>
 </body>
