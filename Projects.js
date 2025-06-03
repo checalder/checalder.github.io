@@ -1,1 +1,0 @@
-console.log(document.getElementById("projects").getAttribute("margin-left"));
