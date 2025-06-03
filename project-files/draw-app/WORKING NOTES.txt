@@ -1,0 +1,8 @@
+rectangle tool - donee
+
+pencil width idea computing project - currently working within the spray can tool, have implemennted the slider in the dom in the correct ".options" area. am also correctly reading the slider values in javascript as this.spread, however, the spread is not being updated within the app even though it is being adjusted correctly in the spray can tool, maybe because it is called in setup and not in draw it just takes the initial value and does not allow for live adjustment even though im doing it? false because if i set the value within the dom tag, it doesnt get read either. for somereason the value is not being applied to the later spread
+
+stroke size option
+outline colour
+different shapes
+width of the pencil and line tool
