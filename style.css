@@ -51,6 +51,11 @@ li{
     background-repeat: repeat-y;
     background-size: 100svw; */
 }
+
+#about-body{
+    font-size: clamp(2.5SVH,2.5svh,3rem);
+    text-align: center;
+}
   
 #bar {
     background-color: aqua;
@@ -62,6 +67,11 @@ li{
     border-radius: 100%;
     float: left;
     margin-right: 1vw;
+}
+
+#catid{
+    max-width: 80%;
+    max-height: 70%;
 }
 
 #comment {
@@ -103,7 +113,6 @@ li{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 8vw;
 }
 
 /* .project-header{
@@ -190,9 +199,9 @@ li{
 .home-subtitle {
     width: 60%;
     text-align: center;
-    font-size: 3vw;
+    font-size: 2vw;
     margin: auto;
-    margin-bottom: 6vw;
+    margin-bottom: 3vw;
 }
 
 
