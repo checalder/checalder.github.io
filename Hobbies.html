@@ -12,9 +12,14 @@
         <a href="About.html">About</a>
         <a href="Hobbies.html">Hobbies</a>
     </nav>
-    <video id="hobbies-video" controls style="width: 20%; height: 20%;">
-        <source src="media/mid guitar.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <p>ol stinky guitar performance</p>
+        <!-- ...existing code... -->
+        <!-- replace the <video> block with this -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/30A7PpraXU4"
+                    title="YouTube video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+        <p>Ol Stinky Guitar Performance</p>
 </body>
