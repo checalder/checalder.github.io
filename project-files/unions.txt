@@ -6,20 +6,32 @@ say i have the union:
 
 typedef union{
   int coin;
-  int penny;
-  int unit;
-  char bytes[sizeof(int)];
-} coins
+  float penny;
+  double unit;
+  char bytes[sizeof(double)];
+} coins;
 
-if i were to say:
+the array will take the largest size variable
 
-coins money;
-money.coin = 1;
+i#include <stdio.h>
 
-then printf(money.unit);
+typedef union{
+  int coin;
+  float penny;
+  double unit;
+  char bytes[sizeof(double)];
+} coins;
 
-i would get 1
+int main() {
 
-and i could look at every bit of the int memory array using bytes[0] bytes[1] and so forth...
+    coins money;
+
+    printf("%d\n",sizeof(money.bytes));
+    printf("byte1: %d, byte2: %d, byte3: %d\n", *(money.bytes), *(money.bytes + 1), *(money.bytes + 2), *(money.bytes + 3));
+}
+
+i would get 1 on the first byte and 0 0 0 and so forth till 8 bytes if i put i were to iterate through it all
+
+remember array names are treated as pointers to the first value in their contiguous allocation so + 1 is treated as pointer arithmetic
 
 this saves memory, which is crucial for embedded systems design.
