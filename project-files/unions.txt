@@ -1,0 +1,25 @@
+unions are like  structs in C
+union name{}; OR typedef union{}name;
+However, unions allow you to share a single memory location for multiple variables
+
+say i have the union:
+
+typedef union{
+  int coin;
+  int penny;
+  int unit;
+  char bytes[sizeof(int)];
+} coins
+
+if i were to say:
+
+coins money;
+money.coin = 1;
+
+then printf(money.unit);
+
+i would get 1
+
+and i could look at every bit of the int memory array using bytes[0] bytes[1] and so forth...
+
+this saves memory, which is crucial for embedded systems design.
